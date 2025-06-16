@@ -1,11 +1,52 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aquaponic Automation System</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello</h1>
+  <div class="content">
+    <h1>Aquaponic Automation System</h1>
+    <div class="grid">
+      <div class="card">
+        <h2>🌡 Water Temperature</h2>
+        <div class="value" id="temp">0°C</div>
+        <progress value="20" max="100"></progress>
+      </div>
+      <div class="card">
+        <h2>💧 Water Quality</h2>
+        <div class="value" id="ph">0.00</div>
+      </div>
+      <div class="card">
+        <h2>⚖️ Water Level</h2>
+        <div class="value" id="level">0</div>
+        <progress value="30" max="100"></progress>
+      </div>
+      <div class="card">
+        <h2>✨ Lighting System</h2>
+        <label class="toggle">
+          <input type="checkbox" id="lightToggle" /> Toggle
+        </label>
+        <input type="range" min="0" max="100" value="50" class="slider">
+      </div>
+      <div class="card">
+        <h2>🚀 Automate System</h2>
+        <label class="toggle">
+          <input type="checkbox" id="autoToggle" /> Enable
+        </label>
+      </div>
+      <div class="card">
+        <h2>⏰ Feeding Schedule</h2>
+        <button class="btn">Feed Now</button>
+      </div>
+      <div class="card camera">
+        <h2>📹 Live Camera Feed</h2>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
